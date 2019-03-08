@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Komvux Prime Sweden</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                </button>   
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#gibson">Gibson</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#ibanez">Ibanez</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#yamaha">Yamaha</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#fender">Fender</a>
+                                        </li> 
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#hagstrom">Hagström</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#acoustic">Acoustic guitars</a>
+                                            </li> 
+                                </ul>
+                            </div> 
+                        </div>
+                        </div>
+
+
+            <!--Log in-->
+
+             <div class="container" id="modalContainer">   
+                         <div id="modalLoginButton">
+                            <a href="#modalLogin" role="button" class="btn btn-primary btn-lg" data-toggle="modal">Login</a>
+                         </div>
+            </div>
+            
+                <div id="modalLogin" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" id="modalContent" name="modalContent">
+                            <div class="modal-header">
+                                <h3>Login</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form" role="form" autocomplete="off" id="formLog" novalidate="" method="POST">
+                                    <div class="form-group">
+                                        <a href="" class="float-right">New user?</a>
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control form-control-lg" name="email" id="email" required="" placeholder="name@example.com">
+                                        <small id="email" class="form-text text-muted">By signing in you agree to let us harvest your organs</small>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control form-control-lg" id="pwd1" required="" placeholder="Password">
+                    
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" id="rememberMe" value="">Remember me
+                                        </label>
+                                    </div>
+                                    <div class="form-group py-4">
+                                        <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                        <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </nav>
+
+
+
+        <!--Home-->
+            <div class="container-fluid" id="homeSortiment">
+            <div class="row">
+                <div class="col">
+                    <div class="page-header" style="text-align: center; color: white;">
+                        <h1>Welcome to generic guitar store!</h1>
+                    </div>
+
+                        <div class="card-columns">
+                            <div class="card bg-primary">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Gibson</h3>
+                                    <p class="card-text">125 Years influencing Generations, Genres and Genders.</p>
+                                    <a href="#gibson" class="nav-link btn btn-dark">Browse</a>
+                                </div>
+                            </div>
+                            <div class="card bg-primary">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Fender</h3>
+                                    <p class="card-text">Since 1946, Fender's iconic Stratocasters, Telecasters guitars have transformed nearly every music genre.</p>
+                                    <a href="#fender" class="nav-link btn btn-dark">Browse</a>
+                                </div>
+                            </div>
+                            <div class="card bg-primary">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Hagström</h3>
+                                    <p class="card-text">The swedish based manufacturer Hagstrom builds electric guitars and basses since 1958.</p>
+                                    <a href="#hagstrom" class="nav-link btn btn-dark">Browse</a>
+                                </div>
+                            </div>
+                            <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Ibanez</h3>
+                            <p class="card-text">Ibanez Guitars bring the solid-body electric guitar into the 21st century.</p>
+                            <a href="#ibanez" class="nav-link btn btn-dark">Browse</a>
+                        </div>
+                    </div> 
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Yamaha</h3>
+                            <p class="card-text">Quality and tone at an affordable price is the hallmark of our guitars.</p>
+                            <a href="#yamaha" class="nav-link btn btn-dark">Browse</a>
+                        </div>
+                    </div>
+                    <div class="card bg-primary">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Acoustic guitars</h3>
+                                <p class="card-text">Placeholder text please ignore</p>
+                                <a href="#acoustic" class="nav-link btn btn-dark">Browse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
+            <!--gibson-->
+         <div class="container-fluid" style="text-align: center;">
+
+            <div class="row" id="gibson" style="display: none">
+                    <div class="col-sm-12">
+                        <div class="page-header">
+                            <h1>Gibson</h1>
+                        </div>    
+                    </div>
+                    
+                    <div class="col-sm-12" style="color:black">
+                            <div class="page-header">
+                                <div class="container">
+                                    <h2>Placeholder text please ignore</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="card-deck">  
+                                <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Les Paul</h4>
+                            <p class="card-text">A very good guitar</p>
+                             <p class="card-text">1458€</p>
+                             <a href="#" class="btn btn-secondary">Add to cart</a>
+                            </div>
+                        </div> 
+                        <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                         <div class="card-body">
+                             <h4 class="card-title">not les paul</h4>
+                             <p class="card-text">Also a very good guitar</p>
+                             <p class="card-text">958€</p>
+                             <a href="#" class="btn btn-secondary">Add to cart</a>            
+                            </div>   
+                        </div>
+                        <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/gibson.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Guitar</h4>
+                                <p class="card-text">Also a very good guitar</p>
+                                <p class="card-text">450€</p>
+                                <a href="#" class="btn btn-secondary">Add to cart</a>
+                        </div>
+                    </div> 
+                    <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Guitar</h4>
+                            <p class="card-text">Also a very good guitar</p>
+                             <p class="card-text">700€</p>
+                             <a href="#" class="btn btn-secondary">Add to cart</a>           
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card-deck">  
+                    <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Les Paul</h4>
+                            <p class="card-text">Also a very good guitar</p>
+                             <p class="card-text">340€</p>
+                             <a href="#" class="btn btn-secondary">Add to cart</a>
+                        </div>
+                    </div> 
+                    <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                        <div class="card-body">
+                                <h4 class="card-title">Les Paul</h4>
+                                <p class="card-text">Also a very good guitar</p>
+                                 <p class="card-text">340€</p>
+                                 <a href="#" class="btn btn-secondary">Add to cart</a>            
+                        </div>   
+                    </div>
+                    <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                        <div class="card-body">
+                                <h4 class="card-title">Les Paul</h4>
+                                <p class="card-text">Also a very good guitar</p>
+                                 <p class="card-text">340€</p>
+                                 <a href="#" class="btn btn-secondary">Add to cart</a>
+                        </div>
+                    </div> 
+                    <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                        <div class="card-body">
+                                <h4 class="card-title">Les Paul</h4>
+                                <p class="card-text">Also a very good guitar</p>
+                                 <p class="card-text">340€</p>
+                                 <a href="#" class="btn btn-secondary">Add to cart</a>           
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card-deck">  
+                    <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/gibson.png">
+                            <div class="card-body">
+                                    <h4 class="card-title">Les Paul</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>
+                            </div>
+                        </div> 
+                        <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/gibson.png">
+                            <div class="card-body">
+                                    <h4 class="card-title">Les Paul</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>          
+                            </div>   
+                        </div>
+                        <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/gibson.png">
+                            <div class="card-body">
+                                    <h4 class="card-title">Les Paul</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>
+                            </div>
+                        </div> 
+                        <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/gibson.png">
+                            <div class="card-body">
+                                    <h4 class="card-title">Les Paul</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>      
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        <!--Fender-->
+
+         <div class="container-fluid" style="color: white; text-align: center;">
+        <div class="row" id="fender" style="display: none">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <h1>Fender</h1>
+                </div>    
+            </div>
+            
+            <div class="col-sm-12" style="color:black">
+                    <div class="page-header">
+                        <div class="container">
+                            <h2>Since 1946, Fender's iconic Stratocasters, Telecasters and Precision & Jazz bass guitars have transformed nearly every music genre.</h2>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-sm-12">
+                <div class="card-deck">  
+                     <div class=card>
+                         <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                         <div class="card-body">
+                                <h4 class="card-title">Stratocaster</h4>
+                                <p class="card-text">Also a very good guitar</p>
+                                 <p class="card-text">340€</p>
+                                 <a href="#" class="btn btn-secondary">Add to cart</a>
+                         </div>
+                     </div> 
+                     <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                         <div class="card-body">
+                                <h4 class="card-title">Stratocaster</h4>
+                                <p class="card-text">Also a very good guitar</p>
+                                 <p class="card-text">340€</p>
+                                 <a href="#" class="btn btn-secondary">Add to cart</a>            
+                    </div>   
+                </div>
+                <div class=card>
+                    <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                        <div class="card-body">
+                                <h4 class="card-title">Stratocaster</h4>
+                                <p class="card-text">Also a very good guitar</p>
+                                 <p class="card-text">340€</p>
+                                 <a href="#" class="btn btn-secondary">Add to cart</a>
+                        </div>
+                    </div> 
+                    <div class=card>
+                    <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                        <div class="card-body">
+                                <h4 class="card-title">Stratocaster</h4>
+                                <p class="card-text">Also a very good guitar</p>
+                                 <p class="card-text">340€</p>
+                                 <a href="#" class="btn btn-secondary">Add to cart</a>           
+                   </div>   
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-12">
+                    <div class="card-deck">  
+                         <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                             <div class="card-body">
+                                    <h4 class="card-title">Stratocaster</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>
+                             </div>
+                         </div> 
+                         <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                             <div class="card-body">
+                                    <h4 class="card-title">Stratocaster</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>         
+                        </div>   
+                    </div>
+                    <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                            <div class="card-body">
+                                    <h4 class="card-title">Stratocaster</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>
+                            </div>
+                        </div> 
+                        <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                            <div class="card-body">
+                                    <h4 class="card-title">Stratocaster</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>           
+                       </div>   
+                    </div>
+                </div>
+                </div>
+            <div class="col-sm-12">
+                <div class="card-deck">  
+                         <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                                <div class="card-body">
+                                        <h4 class="card-title">Stratocaster</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>
+                                </div>
+                         </div> 
+                             <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                                 <div class="card-body">
+                                        <h4 class="card-title">Stratocaster</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>          
+                            </div>   
+                            </div>
+                        <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                                <div class="card-body">
+                                        <h4 class="card-title">Stratocaster</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>
+                                </div>
+                            </div> 
+                            <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/fender.jpg">
+                                 <div class="card-body">
+                                        <h4 class="card-title">Stratocaster</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>         
+                                </div>   
+                            </div>
+                     </div>
+                 </div>
+             </div>
+            </div>
+
+
+        <!--Hagström-->
+             <div class="container-fluid" style="color: white; text-align: center;">
+        <div class="row" id="hagstrom" style="display: none">
+                <div class="col-sm-12">
+                    <div class="page-header">
+                        <h1>Placeholder</h1>
+                    </div>    
+                </div>
+                
+                <div class="col-sm-12">
+                        <div class="page-header">
+                            <div class="container">
+                                <h2>Placeholder text please ignore</h2>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-sm-12">
+                    <div class="card-deck">  
+                         <div class=card>
+                             <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                             <div class="card-body">
+                                    <h4 class="card-title">Viking</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>
+                             </div>
+                         </div> 
+                         <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                             <div class="card-body">
+                                    <h4 class="card-title">Viking</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>            
+                        </div>   
+                    </div>
+                    <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                            <div class="card-body">
+                                    <h4 class="card-title">Viking</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>  
+                            </div>
+                        </div> 
+                        <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                            <div class="card-body">
+                                    <h4 class="card-title">Viking</h4>
+                                    <p class="card-text">Also a very good guitar</p>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>            
+                       </div>   
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-12">
+                        <div class="card-deck">  
+                             <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                                 <div class="card-body">
+                                        <h4 class="card-title">Viking</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>  
+                                 </div>
+                             </div> 
+                             <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                                 <div class="card-body">
+                                        <h4 class="card-title">Viking</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>              
+                            </div>   
+                        </div>
+                        <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                                <div class="card-body">
+                                        <h4 class="card-title">Viking</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>  
+                                </div>
+                            </div> 
+                            <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                                <div class="card-body">
+                                        <h4 class="card-title">Viking</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>              
+                           </div>   
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-sm-12">
+                    <div class="card-deck">  
+                             <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                                    <div class="card-body">
+                                            <h4 class="card-title">Viking</h4>
+                                            <p class="card-text">Also a very good guitar</p>
+                                             <p class="card-text">340€</p>
+                                             <a href="#" class="btn btn-secondary">Add to cart</a>  
+                                    </div>
+                             </div> 
+                                 <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                                     <div class="card-body">
+                                            <h4 class="card-title">Viking</h4>
+                                            <p class="card-text">Also a very good guitar</p>
+                                             <p class="card-text">340€</p>
+                                             <a href="#" class="btn btn-secondary">Add to cart</a>            
+                                </div>   
+                                </div>
+                            <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                                    <div class="card-body">
+                                            <h4 class="card-title">Viking</h4>
+                                            <p class="card-text">Also a very good guitar</p>
+                                             <p class="card-text">340€</p>
+                                             <a href="#" class="btn btn-secondary">Add to cart</a>  
+                                    </div>
+                                </div> 
+                                <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/hagstrom.jpg">
+                                     <div class="card-body">
+                                            <h4 class="card-title">Viking</h4>
+                                            <p class="card-text">Also a very good guitar</p>
+                                             <p class="card-text">340€</p>
+                                             <a href="#" class="btn btn-secondary">Add to cart</a>            
+                                    </div>   
+                                </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <!--Ibanez-->
+            <div class="container-fluid" style="color: white; text-align: center;">>
+            <div class="row" id="ibanez" style="display: none">
+                    <div class="col-sm-12">
+                        <div class="page-header">
+                            <h1>Ibanez</h1>
+                        </div>    
+                    </div>
+                    
+                    <div class="col-sm-12" style="color:black">
+                            <div class="page-header">
+                                <div class="container">
+                                    <h2>Placeholder text please ignore</h2>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-sm-12">
+                        <div class="card-deck">  
+                             <div class=card>
+                                 <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                 <div class="card-body">
+                                        <h4 class="card-title">GSA60</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>
+                                 </div>
+                             </div> 
+                             <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                 <div class="card-body">
+                                        <h4 class="card-title">GSA60</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>           
+                            </div>   
+                        </div>
+                        <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                <div class="card-body">
+                                        <h4 class="card-title">GSA60</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>
+                                </div>
+                            </div> 
+                            <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                <div class="card-body">
+                                        <h4 class="card-title">GSA60</h4>
+                                        <p class="card-text">Also a very good guitar</p>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>            
+                           </div>   
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-12">
+                            <div class="card-deck">  
+                                 <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                     <div class="card-body">
+                                            <h4 class="card-title">GSA60</h4>
+                                            <p class="card-text">Also a very good guitar</p>
+                                             <p class="card-text">340€</p>
+                                             <a href="#" class="btn btn-secondary">Add to cart</a>
+                                     </div>
+                                 </div> 
+                                 <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                     <div class="card-body">
+                                            <h4 class="card-title">GSA60</h4>
+                                            <p class="card-text">Also a very good guitar</p>
+                                             <p class="card-text">340€</p>
+                                             <a href="#" class="btn btn-secondary">Add to cart</a>          
+                                </div>   
+                            </div>
+                            <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                    <div class="card-body">
+                                            <h4 class="card-title">GSA60</h4>
+                                            <p class="card-text">Also a very good guitar</p>
+                                             <p class="card-text">340€</p>
+                                             <a href="#" class="btn btn-secondary">Add to cart</a>
+                                    </div>
+                                </div> 
+                                <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                    <div class="card-body">
+                                            <h4 class="card-title">GSA60</h4>
+                                            <p class="card-text">Also a very good guitar</p>
+                                             <p class="card-text">340€</p>
+                                             <a href="#" class="btn btn-secondary">Add to cart</a>        
+                               </div>   
+                            </div>
+                        </div>
+                        </div>
+                    <div class="col-sm-12">
+                        <div class="card-deck">  
+                                 <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                        <div class="card-body">
+                                                <h4 class="card-title">GSA60</h4>
+                                                <p class="card-text">Also a very good guitar</p>
+                                                 <p class="card-text">340€</p>
+                                                 <a href="#" class="btn btn-secondary">Add to cart</a>
+                                        </div>
+                                 </div> 
+                                     <div class=card>
+                                        <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                         <div class="card-body">
+                                                <h4 class="card-title">GSA60</h4>
+                                                <p class="card-text">Also a very good guitar</p>
+                                                 <p class="card-text">340€</p>
+                                                 <a href="#" class="btn btn-secondary">Add to cart</a>    
+                                    </div>   
+                                    </div>
+                                <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                        <div class="card-body">
+                                                <h4 class="card-title">GSA60</h4>
+                                                <p class="card-text">Also a very good guitar</p>
+                                                 <p class="card-text">340€</p>
+                                                 <a href="#" class="btn btn-secondary">Add to cart</a>
+                                        </div>
+                                    </div> 
+                                    <div class=card>
+                                        <img class="card-img-top img-responsive" src="/images/ibanez.jpg">
+                                         <div class="card-body">
+                                                <h4 class="card-title">GSA60</h4>
+                                                <p class="card-text">Also a very good guitar</p>
+                                                 <p class="card-text">340€</p>
+                                                 <a href="#" class="btn btn-secondary">Add to cart</a>        
+                                        </div>   
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--Yamaha-->
+ <div class="container-fluid" style="color: white; text-align: center;">
+        <div class="row" id="yamaha" style="display: none">
+                <div class="col-sm-12">
+                    <div class="page-header">
+                        <h1>Yamaha</h1>
+                    </div>    
+                </div>
+                
+                <div class="col-sm-12">
+                        <div class="page-header">
+                            <div class="container">
+                                <p>Not the motorcycle kind</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-sm-12">
+                    <div class="card-deck">  
+                         <div class=card>
+                             <img class="card-img-top img-responsive" src="/images/gibson.png">
+                             <div class="card-body">
+                                 <h4 class="card-title">Guitar</h4>
+                                 <p class="card-text">340€</p>
+                                <a href="#" class="btn btn-secondary">Add to cart</a> 
+                             </div>
+                         </div> 
+                         <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/gibson.png">
+                             <div class="card-body">
+                                 <h4 class="card-title">Guitar</h4>
+                                 <p class="card-text">340€</p>
+                                <a href="#" class="btn btn-secondary">Add to cart</a>            
+                        </div>   
+                    </div>
+                    <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Guitar</h4>
+                                <p class="card-text">340€</p>
+                                <a href="#" class="btn btn-secondary">Add to cart</a>
+                            </div>
+                        </div> 
+                        <div class=card>
+                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Guitar</h4>
+                                <p class="card-text">340€</p>
+                                <a href="#" class="btn btn-secondary">Add to cart</a>            
+                       </div>   
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-12">
+                        <div class="card-deck">  
+                             <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                 <div class="card-body">
+                                     <h4 class="card-title">Guitar</h4>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>
+                                 </div>
+                             </div> 
+                             <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                 <div class="card-body">
+                                     <h4 class="card-title">Guitar</h4>
+                                     <p class="card-text">340€</p>
+                                     <a href="#" class="btn btn-secondary">Add to cart</a>            
+                            </div>   
+                        </div>
+                        <div class=card>
+                            <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                <div class="card-body">
+                                    <h4 class="card-title">Guitar</h4>
+                                    <p class="card-text">340€</p>
+                                    <a href="#" class="btn btn-secondary">Add to cart</a>
+                                </div>
+                            </div> 
+                            <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                <div class="card-body">
+                                    <h4 class="card-title">Guitar</h4>
+                                    <p class="card-text">340€</p>
+                                    <a href="#" class="btn btn-secondary">Add to cart</a>            
+                           </div>   
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-sm-12">
+                    <div class="card-deck">  
+                             <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                    <div class="card-body">
+                                         <h4 class="card-title">Guitar</h4>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>
+                                    </div>
+                             </div> 
+                                 <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                     <div class="card-body">
+                                         <h4 class="card-title">Guitar</h4>
+                                         <p class="card-text">340€</p>
+                                         <a href="#" class="btn btn-secondary">Add to cart</a>            
+                                </div>   
+                                </div>
+                            <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Guitar</h4>
+                                        <p class="card-text">340€</p>
+                                        <a href="#" class="btn btn-secondary">Add to cart</a>
+                                    </div>
+                                </div> 
+                                <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                     <div class="card-body">
+                                        <h4 class="card-title">Guitar</h4>
+                                        <p class="card-text">340€</p>
+                                        <a href="#" class="btn btn-secondary">Add to cart</a>            
+                               </div>   
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Acoustic-->
+         <div class="container-fluid" style="color: white; text-align: center;">
+                <div class="row" id="acoustic" style="display: none">
+                        <div class="col-sm-12">
+                            <div class="page-header">
+                                <h1>Acoustic guitars</h1>
+                            </div>    
+                        </div>
+                        
+                        <div class="col-sm-12" style="color:black">
+                                <div class="page-header">
+                                    <div class="container">
+                                        <h2>Placeholder text please ignore</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="col-sm-12">
+                            <div class="card-deck">  
+                                 <div class=card>
+                                     <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                     <div class="card-body">
+                                         <h4 class="card-title">Les Paul</h4>
+                                         <p class="card-text">price goes here</p>
+                                     </div>
+                                 </div> 
+                                 <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                     <div class="card-body">
+                                         <h4 class="card-title">Guitar</h4>
+                                         <p class="card-text">Example text</p>            
+                                </div>   
+                            </div>
+                            <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Guitar</h4>
+                                        <p class="card-text">Example text</p>
+                                    </div>
+                                </div> 
+                                <div class=card>
+                                <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Guitar</h4>
+                                        <p class="card-text">Example text</p>            
+                               </div>   
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-sm-12">
+                                <div class="card-deck">  
+                                     <div class=card>
+                                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                         <div class="card-body">
+                                             <h4 class="card-title">Guitar</h4>
+                                             <p class="card-text">Example text</p>
+                                         </div>
+                                     </div> 
+                                     <div class=card>
+                                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                         <div class="card-body">
+                                             <h4 class="card-title">Guitar</h4>
+                                             <p class="card-text">Example text</p>            
+                                    </div>   
+                                </div>
+                                <div class=card>
+                                    <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Guitar</h4>
+                                            <p class="card-text">Example text</p>
+                                        </div>
+                                    </div> 
+                                    <div class=card>
+                                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Guitar</h4>
+                                            <p class="card-text">Example text</p>            
+                                   </div>   
+                                </div>
+                            </div>
+                            </div>
+                        <div class="col-sm-12">
+                            <div class="card-deck">  
+                                     <div class=card>
+                                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                            <div class="card-body">
+                                                 <h4 class="card-title">Guitar</h4>
+                                                 <p class="card-text">Example text</p>
+                                            </div>
+                                     </div> 
+                                         <div class=card>
+                                            <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                             <div class="card-body">
+                                                 <h4 class="card-title">Guitar</h4>
+                                                 <p class="card-text">Example text</p>            
+                                        </div>   
+                                        </div>
+                                    <div class=card>
+                                        <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Guitar</h4>
+                                                <p class="card-text">Example text</p>
+                                            </div>
+                                        </div> 
+                                        <div class=card>
+                                            <img class="card-img-top img-responsive" src="/images/gibson.png">
+                                             <div class="card-body">
+                                                <h4 class="card-title">Guitar</h4>
+                                                <p class="card-text">Example text</p>            
+                                       </div>   
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+       <!--Footer-->
+
+       
+<footer class="page-footer font-small" style="color: gray">
+    <div class="text-center py-3">
+        <p>website made by Axel Landgren</p>
+    </div>
+</footer>
+      
+
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

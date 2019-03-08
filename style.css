@@ -1,0 +1,48 @@
+/*html {
+    font-size: 1rem;
+  }
+  */
+body {
+    background-color: darkgray;
+    background-image: url('images/ledzep.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+img.card-img-top img-responsive {
+    max-width: 200px;
+    max-height: 300px;
+}
+
+div.jumbotron {
+    text-align: center;
+    margin-top: 15px;
+}
+
+div.row#cards {
+    margin-top: 15px;
+}
+
+div.card {
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+div#modalLogin {
+    color: black;
+}
+
+div.row#carousel {
+  margin: 0 auto;
+}
+
+div.row#about {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+
+
+
